@@ -12,3 +12,14 @@ class Client(db.Model):
         self.name = name
         self.email = email
         self.phone = phone
+
+    def __repr__(self):
+        return f"{self.name}:{self.id}"
+
+    def to_json(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "email": self.emai,
+            "phone": self.phone
+        }
