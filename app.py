@@ -2,7 +2,7 @@ from flask import Flask, request, Response
 from flask_sqlalchemy import SQLAlchemy
 
 import config
-from Service.ClientService import ClientService
+from service.ClientService import ClientService
 
 app = Flask(__name__)
 app.secret_key = config.key

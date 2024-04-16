@@ -1,4 +1,4 @@
-from DAO.Repository.ClientRepository import ClientRepository
+from Dao.Repository.ClientRepository import ClientRepository
 
 
 class ClientService:
